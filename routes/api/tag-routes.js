@@ -28,16 +28,23 @@ router.get('/:id', async (req, res) => {
       res.status(404).json({message: "No tag here"})
       return;
     }
-    console.log("Got Here");
+
     res.status(200).json(tagData)
   } catch (err) {
     res.status(500).json(err);
   }
 });
 
-router.post('/', (req, res) => {
+router.post('/', async (req, res) => {
   // create a new tag
-  
+  try {
+    const tagPost = await Tag.create({
+      tag_name : req.body.tag_name,
+    });
+    res.status(200).json(tagPost);
+  } catch (err) {
+    res.status(400).json(err)
+  }
 });
 
 router.put('/:id', (req, res) => {
