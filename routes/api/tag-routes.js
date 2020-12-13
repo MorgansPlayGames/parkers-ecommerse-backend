@@ -49,10 +49,20 @@ router.post('/', async (req, res) => {
 
 router.put('/:id', (req, res) => {
   // update a tag's name by its `id` value
+  try {
+    const tagUpdate = await Tag.findByPk(req.params.id);
+    tagUpdate.tag_name = req.body.tag_name;
+    await tagUpdate.save()
+    res.status(200).json(tagUpdate);
+  } catch (err) {
+    res.status(400).json(err)
+  }
 });
+
 
 router.delete('/:id', (req, res) => {
   // delete on tag by its `id` value
+
 });
 
 module.exports = router;
