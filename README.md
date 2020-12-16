@@ -3,9 +3,9 @@ Backend database to query with Insomnia
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-[Link to repository](https://github.com/MorgansPlayGames/parkers-employee-tracker)
+[Link to repository](https://github.com/MorgansPlayGames/parkers-ecommerse-backend)
 
-[Video of parkers-ecommerse-backend in action](https://drive.google.com/file/d/1F-Ua20hTp_jy1ZsOoWI9o9vWXVzCyvvH/view)
+[Video of parkers-ecommerse-backend in action](https://drive.google.com/file/d/1U_bkd6mOz6nO18DNRFeWoGjUsvU0sgS6/view)
 
 
 
@@ -43,7 +43,7 @@ Backend database to query with Insomnia
     /products
 
     can get specific id with /#
-    
+
 
 
 ### Contribution Guidelines
